@@ -54,8 +54,8 @@ function Person(name,age){
 let new_person = new Person('Mehdi',40);
 
 console.log(new_person.printInfo())
-let new_person = new Person('Zachary', 37);
-console.log(new_person.printInfo())
+let new_person2 = new Person('Zachary', 37);
+console.log(new_person2.printInfo())
 
 // =============Exercise #3 ============//
 /*
@@ -65,18 +65,18 @@ console.log(new_person.printInfo())
     If the length of the string is less than 10 console log "Small Number"
 */
 
-const stringLenght = (string) => {
+const stringLength = (string) => {
     return new Promise((resolve,reject) => {
-        if(lenght > 10){
+        if(string.length > 10){
             resolve(true);
-        }else {
+        }else{
             reject(false)
         }
     })
 }
 
 // Using JS Promise
-stringLenght(6).then((result) => {
+stringLength("dog").then((result) => {
     console.log('Big word', result)
 }).catch((error) => {
     console.log('Small Number', error)
