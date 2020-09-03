@@ -16,16 +16,10 @@ let person3 = {
     }]
 }
 
-function Person(pizza,tacos,burgers,ice_cream,shakes){
-    this.pizza = pizza;
-    this.tacos = tacos;
-    this.burgers = burgers;
-    this.ice_cream = ice_cream;
-    this.shakes = shakes
-
-}
-for(let i = 0; i < Object.keys(person3).lenght; i++){
-    console.log(Object.keys(person3)[i])
+function parse_food(obj){
+    for(let i = 0; i < Object.keys(obj).length; i++){
+        console.log(Object.values(obj)[i])
+    };
 }
 
 //=======Exercise #2=========//
